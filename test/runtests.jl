@@ -1,13 +1,7 @@
 using AbstractAlgebra
 
-using SparseArrays, LinearAlgebra
-
-if VERSION < v"0.7.0-DEV.2004"
-   using Base.Test
-else
-   using Test
-end
+using Test
 
 include("../test/AbstractAlgebra-test.jl")
 
-test_all()
+test_module()
